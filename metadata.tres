@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://mods/ritual_candle_split/mod_load.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+id = "ritual_candle_split"
+name = "Ritual Candle Split"
+version_code = 0
+version_string = "1.0.2"
+author = "NCrafters"
+save_file_format_tag = ""
+save_file_format_tag_version = 0
+network_protocol_tag = ""
+modified_files = [ "res://nodes/actions/ExchangeMenuAction.gd", "res://menus/tape_storage/TapeStorageMenu.gd", "res://nodes/actions/RaidBattleAction.gd", "res://data/item_scripts/BootlegRitualCandleItem.gd" ]
+modified_dirs = [  ]
+translations = [  ]

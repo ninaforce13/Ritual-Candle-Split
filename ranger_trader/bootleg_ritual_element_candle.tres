@@ -1,0 +1,29 @@
+[gd_resource type="Resource" load_steps=7 format=2]
+
+[ext_resource path="res://data/exchange_scripts/DetailedExchange.gd" type="Script" id=1]
+[ext_resource path="res://data/items/fused_material.tres" type="Resource" id=2]
+[ext_resource path="res://sprites/items/ritual_candle.png" type="Texture" id=3]
+[ext_resource path="res://data/exchange_scripts/CaptainExchangeConditional.gd" type="Script" id=4]
+[ext_resource path="res://mods/ritual_candle_split/ritual_items/bootleg_ritual_element_candle.tres" type="Resource" id=5]
+
+[sub_resource type="Resource" id=1]
+resource_name = "became captain"
+script = ExtResource( 4 )
+description = ""
+defeated_num_captains = 14
+
+[resource]
+resource_name = "bootleg_ritual_candle"
+script = ExtResource( 1 )
+item = ExtResource( 5 )
+max_amount = 1000
+only_sold_if_unowned = false
+visibility_conditional = SubResource( 1 )
+name = "Element Ritual Candle"
+description = "Burn this candle and then sacrifice (recycle) a recorded tape to influence the next fusion you encounter. It will have a bootleg that matches the element of the tape you sacrificed."
+icon = ExtResource( 3 )
+rarity = 2
+amount = 1
+service = ""
+currencies = [ ExtResource( 2 ) ]
+prices = [ 75 ]
